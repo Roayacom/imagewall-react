@@ -37,7 +37,7 @@ class Modal extends Component {
     return(
         <div id="Modal" className="absolute  top-0 flex items-center justify-center  ">
         <div className=" p-6 py-6 bg-gray-700 opacity-90 p-2   w-screen h-screen ">    </div>
-         <div className="absolute bg-white top-8 w-2/3 h-5/6 border-8 border-opacity-25 border-pink-300 rounded-lg ">
+         <div className="absolute bg-white top-8 w-2/3 h-5/6 border-8 border-opacity-25 border-blue-300 rounded-lg ">
 
         <h1 class="viewImageTitle text-3xl text-purple-800 py-6 text-center">{image.inputImgTitle}</h1>
 
