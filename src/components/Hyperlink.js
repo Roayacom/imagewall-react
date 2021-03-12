@@ -8,7 +8,7 @@ const Hyperlink  =({
 {
    
 return(
-    <a class="text-pink-300 underline cursor-pointer" onClick={onClick}>{children}</a>  
+    <a class="text-blue-300 underline cursor-pointer" onClick={onClick}>{children}</a>  
 )
 }
 export default Hyperlink

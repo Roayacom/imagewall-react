@@ -112,7 +112,7 @@ handleChange=event=>{
         <div class="flex inline-flex items-center   space-x-4">
 
          <Hyperlink>Log in</Hyperlink>
-            <Button>Sign Up</Button>
+            <Button className="pt-1">Sign Up</Button>
 
         </div>
 

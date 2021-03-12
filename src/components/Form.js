@@ -69,7 +69,7 @@ addImage=(event)=>{
        
                
                 <form id="formImgUpload" onSubmit={this.addImage} class=" bg-gray-600 max-w-screen-md mx-auto border border-yellow-100 shadow-lg rounded px-4 pt-2 pb-2 mb-4  flex flex-col my-6">
-                    <div class=" tracking-wide text-pink-300 text-xl font-bold mx-auto mb-6">Upload a new photo </div>
+                    <div class=" tracking-wide text-blue-300 text-xl font-bold mx-auto mb-6">Upload a new photo </div>
                     <div class="-mx-3 md:flex mb-6">
                         <div class="md:w-1/2 px-3 mb-4 md:mb-0">
                             <label class="block  tracking-wide text-yellow-100 text-xs font-bold mb-2" for="inputImgTitle">
