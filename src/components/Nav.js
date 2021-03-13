@@ -87,14 +87,15 @@ handleChange=event=>{
     <nav className="bg-gray-700">
     <div class="container  mx-auto px-6 py-4 flex justify-between items-center">
 
-        <div class="flex px-1">
-            <div className=" flex">
+        <div class=" flex px-1">
+          
+               
             <img src={logo} alt="imageWALL"  />
             
          
-            <p className="text-white pt-1 " style={{fontFamily:'Wallpoet'}}>imageWALL</p>
-          
-       </div>
+            <p className=" text-white pt-1 " style={{fontFamily:'Wallpoet'}}>imageWALL</p>
+         
+     
         </div>
 
 

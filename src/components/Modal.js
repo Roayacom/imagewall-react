@@ -7,11 +7,11 @@ class Modal extends Component {
     constructor(props) {
         super(props);
     }
-        closeModal=()=>{
+      //  closeModal=()=>{
             //document.getElementById("Modal").classList.add("hidden");
-            this.props.closeModal && this.props.closeModal();
+         //   this.props.closeModal && this.props.closeModal();
          
-        }
+     //   }
         deleteImg=()=>{
             let confirmResult = window.confirm("Are you sure you want to delete the image?");
         if (confirmResult) {
@@ -19,7 +19,7 @@ class Modal extends Component {
             let image = imageCollection.findIndex(imageCollection => imageCollection.imgID ==this.props.modalImgID);
           
            imageCollection.splice(image, 1);
-          this.closeModal();
+          this.props.closeModal();
 
           //  if (imageCollection.length >= 0) {
              //  album();
@@ -45,7 +45,7 @@ class Modal extends Component {
         <h1 class="viewImageDescription tex-xl py-4 text-center" >{image.inputImgDesc} </h1>
         <p class="viewImageDate text-xl py-4 text-center">Created at: {image.imgCreated}</p>
         <div class="flex justify-between absolute inset-x-6 bottom-6 ">
-            <button className="closeModal w-1/6  p-2 bg-gray-700 hover:bg-gray-800 text-white  " onClick={this.closeModal}>Close</button>
+            <button className="closeModal w-1/6  p-2 bg-gray-700 hover:bg-gray-800 text-white  " onClick={this.props.closeModal}>Close</button>
             <button class="deleteImage w-1/6 p-2  bg-red-700 hover:bg-red-800 text-white "
                 onClick={this.deleteImg}>Delete</button>
                 </div>

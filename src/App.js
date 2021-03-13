@@ -11,8 +11,8 @@ class App extends Component {
     super(props);
   
  this.state={
-  modalImgID:'',
-  isShow:false,
+  //modalImgID:'',
+  //isShow:false,
     photosArray:[]
    
   };
@@ -20,15 +20,7 @@ class App extends Component {
     this.setState({photosArray:[...this.state.photosArray,photo]})
   
   }
-   this.openModal =imgID =>{
-       
-    this.setState({
-           modalImgID:imgID,
-           isShow:!this.state.isShow
-           
-    })
-         console.log(this.state.modalImgID); 
-     }
+ 
     }
 
   render(){
@@ -38,8 +30,8 @@ class App extends Component {
     <div className="App  ">
       <Nav photoData={photosArray} />
       <Form handleSubmit={this.handleSubmit}/>
-      <Gallery photoData={photosArray} openModal={this.openModal}/>
-      <Modal className="" modalImgID={this.state.modalImgID} photoData={photosArray} closeModal={this.openModal} isShow={this.state.isShow}/>
+      <Gallery photoData={photosArray} />
+      
    
      
       

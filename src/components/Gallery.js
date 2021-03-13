@@ -11,6 +11,15 @@ clickedImgID:'',
 isShow:false
 }
 
+this.openModal =imgID =>{
+       
+    this.setState(prev=>({
+           modalImgID:imgID,
+           isShow:!prev.isShow
+           
+    }))
+         console.log(this.state.modalImgID); 
+     }
  }
 
 
@@ -31,11 +40,12 @@ isShow:false
                 <header className="flex bg-yellow-50 items-center justify-between  md:p-4">
                  
                 <h1 className="text-lg font-bold  text-fray-700"> {article.inputImgTitle}</h1>
-                <Hyperlink onClick={()=>this.props.openModal(article.imgID)}>View</Hyperlink>
+                <Hyperlink onClick={()=>this.openModal(article.imgID)}>View</Hyperlink>
             
                 </header>
                 {/* <div>Description: {article.inputImgDesc}</div> */}
-                
+
+               
             </article>
        
         );
@@ -44,6 +54,8 @@ isShow:false
     return (
     <div>
         <section className="mx-20 my-5 grid grid-cols-1 md:grid-cols-4 gap-5">{articles}</section>
+        <Modal className="" modalImgID={this.state.modalImgID} photoData={this.props.photoData} closeModal={this.openModal} isShow={this.state.isShow}/>
+                
       
 </div>
     )
