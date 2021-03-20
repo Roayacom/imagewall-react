@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/imagewall-react/static/js/main.1d3967f1.chunk.js",
+    "main.js.map": "/imagewall-react/static/js/main.1d3967f1.chunk.js.map",
+    "runtime-main.js": "/imagewall-react/static/js/runtime-main.38510e5c.js",
+    "runtime-main.js.map": "/imagewall-react/static/js/runtime-main.38510e5c.js.map",
+    "static/js/2.36a5766b.chunk.js": "/imagewall-react/static/js/2.36a5766b.chunk.js",
+    "static/js/2.36a5766b.chunk.js.map": "/imagewall-react/static/js/2.36a5766b.chunk.js.map",
+    "static/js/3.b03158c0.chunk.js": "/imagewall-react/static/js/3.b03158c0.chunk.js",
+    "static/js/3.b03158c0.chunk.js.map": "/imagewall-react/static/js/3.b03158c0.chunk.js.map",
+    "index.html": "/imagewall-react/index.html",
+    "static/js/2.36a5766b.chunk.js.LICENSE.txt": "/imagewall-react/static/js/2.36a5766b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.38510e5c.js",
+    "static/js/2.36a5766b.chunk.js",
+    "static/js/main.1d3967f1.chunk.js"
+  ]
+}
